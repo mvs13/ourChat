@@ -1,13 +1,15 @@
 <template>
-  <q-page class="flex flex-center">
-    <h1>Room Two</h1>
-  </q-page>
+  <room-block title="Room Two" id="roomTwo"></room-block>
 </template>
 
 <script>
 import { defineComponent } from "vue";
+import roomBlock from "src/components/roomBlock.vue";
 
 export default defineComponent({
   name: "roomTwoPage",
+  components: {
+    roomBlock,
+  },
 });
 </script>
